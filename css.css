@@ -1,0 +1,569 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
+*{text-decoration: none; font-family: 'Poppins', sans-serif; margin: 0; padding: 0; scroll-behavior: smooth;}
+
+:root{
+    --gradient:linear-gradient(104deg, #9B51E0 21.01%, rgba(48, 129, 237, 0.80) 100%);
+    --gray-text-color: #BCBCBC;
+}
+
+body{
+    background-color: #1F1D2B;
+}
+header{
+    /* background-color: red; */
+    gap: 200px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    padding-left: 78px;
+    padding-right: 78px;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 100%;
+    min-height: 83px;
+}
+header >h1{
+    width: 134px;
+    height: auto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+header > nav{
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+}
+
+header > nav > a{
+    color: var(--gray-text-color);  
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; 
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+header > .auth {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header > .auth > button {
+    width: 126px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #D7D7D7;
+}
+header > .auth > a{
+    margin-left: 32px;
+    color: var(--gray-text-color);
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 22px; /* 183.333% */
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+header > nav > a:hover{
+    text-transform: uppercase;
+    font-weight: 700;
+    background: var(--gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-decoration: underline;
+}
+
+main{
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 154px;
+    /* background-color: rgba(255, 0, 0, 0.281); */
+    max-width: 100%;
+    min-height: 800px;
+}
+
+/* section 1*/
+
+.blur1{
+    z-index: 0;
+    position: absolute;
+    top: 120px;
+    right: 490px;
+}
+
+.blur2{
+    z-index: 0;
+    position: absolute;
+    border-radius: 10px;
+    max-width: 100%;
+    min-height: 353px;
+    background: var(--gradient);
+    filter: blur(150px);
+    left: 0;
+    top: 1760px;
+    right: 0;
+
+}
+
+.preview{
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.preview >.block-priview{
+    z-index: 10;
+    max-width: 637px;
+    min-height: auto;
+}
+
+
+.preview > .block-priview > h2{
+    color: #fff;
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 82px; /* 113.889% */
+    letter-spacing: -2px;
+    margin-bottom: 24px;
+}
+
+.preview > .block-priview > p{
+    color: var(--gray-text-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 36px; /* 150% */
+    letter-spacing: 0.5px;
+    margin-bottom: 32px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.preview > .block-priview > .buttons > button:first-child {
+    margin-right: 40px;
+    border-radius: 16px;
+    border: none;
+    font-size: 24px;
+    display: flex;
+    width: 218px;
+    padding: 12px 24px;
+    justify-content: center;
+    font-weight: 600;
+    align-items: center;
+    background: var(--gradient);
+    color: #FFF;
+}
+
+.preview > .block-priview > .buttons > button:last-child{
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.007);
+    width: 218px;
+    padding: 12px 24px;
+    font-size: 24px;
+    font-weight: 600;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    border: 1px solid var(--gray-text-color);
+}
+
+.preview > .card-nft {
+    z-index: 10;
+    border-radius: 35.025px;
+    background: linear-gradient(169deg, rgba(58, 129, 191, 0.08) 1.85%, rgba(65, 48, 90, 0.08) 98.72%);
+    border: 0.876px solid transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    width: 504px;
+    height: 585px;
+    margin-left: 150px;
+}
+
+.preview > .card-nft >img {
+    margin-bottom: 30px;
+}
+
+.preview > .card-nft > .avatar{
+    color: #FFF;
+    display: flex;
+    flex-direction: row;
+}
+
+.preview > .card-nft > .avatar > img {
+    margin-right: 20px;
+}
+
+.preview > .card-nft > .avatar >.rating:nth-child(n + 2){
+    margin-left: 170px;
+}
+
+.preview > .card-nft > .avatar > .avatar-block > img{
+    position: absolute;
+    left: 953px;
+}
+
+.preview > .card-nft > .avatar > .avatar-block{
+    display: flex;
+    flex-direction: column;
+}
+.preview > .card-nft > .avatar > .rating{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+}
+
+.preview > .card-nft > .avatar > .rating > .test{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 8px;
+    flex-direction: row;
+}
+
+/* section 2*/
+
+.auctions{
+    padding-top: 160px;
+    color: #FFF;
+
+    max-width: 100%;
+    min-height: auto;
+}
+.auctions > h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.auctions > .cardes{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    max-height: 430px;
+
+}
+
+.auctions > .cardes > img{
+    width: 298px;
+    height: 313px;
+}
+.auctions > .cardes > .price-nft{
+    margin-right: auto;
+    max-width: 298px;
+}
+
+.auctions > .cardes > .price-nft:last-child{
+    margin-right: 0;
+}
+
+.block1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+.auctions > .cardes > .price-nft > .block1 > h3{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.auctions > .cardes > .price-nft > .block1 > p{
+    color: var(--gray-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.auctions > .cardes > .price-nft > .block1 > button{
+    border-radius: 8px;
+    border: 1px solid var(--gray-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0);
+}
+.vector{
+    position: absolute;
+    bottom: 50px;
+}
+
+/* section 3 */
+.advantages{
+    z-index: 10;
+    display: grid;
+    grid-template-rows: min-content;
+    justify-content: center;
+    /* background-color: rgba(255, 0, 0, 0.295); */
+    max-width: 100%;
+    min-height: auto;
+    padding-top: 160px;
+}
+
+.advantages > .content{
+    display: flex;
+    flex-direction: column;
+}
+
+.advantages > .content > h2{
+    margin-bottom: 24px;
+    color: #FFF;
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+}
+.advantages > .content > p{
+    color: var(--gray-text-color);
+    font-size: 24px;
+    font-style: normal;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 80px;
+}
+
+.advantages > .cardes{
+    z-index: 10;
+    display: grid;
+    text-align: center;
+    max-height: auto;
+    max-width: 60vw;
+    grid-template-columns:repeat(auto-fill,150px);
+    gap: 150px;
+    align-items: flex-start;
+}
+
+.advantages > .cardes > .card > h2{
+    position: relative;
+    right: 29px;
+    color: #FFF;
+    width: 200px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.advantages > .cardes > .card > .block{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 26px;
+    max-width: 150px;
+    min-height: 138px;
+    z-index: 10;
+
+    background: rgba(255, 255, 255, 0.09);
+    box-shadow: -3.01333px 3.01333px 3.01333px 0px rgba(255, 255, 255, 0.39) inset, 2.01px -2.01px 20px 0px rgba(214, 214, 214, 0.17) inset;
+    backdrop-filter: blur(37.21466827392578px);
+}
+
+
+/* section 4 */
+.discover{
+    padding-top: 204px;
+    max-width: 100%;
+    min-height: auto;
+    display: flex;
+    flex-direction: column;
+    color: #FFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.discover > .row-d{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-bottom: 80px;
+}
+.discover > .row-d > h2{
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.discover > .row-d > .util{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    display: flex;
+    flex-direction: row;
+}
+
+.discover > .row-d > .util > button{
+    background: var(--gradient);
+    border: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-width: 168px;
+    min-height: 48px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+.discover > .row-d > .util > button > img{
+    margin-right: 10px;
+}
+
+.discover > .row-d > .util >p{
+    margin-right: 40px;
+}
+
+.discover > .row-d > .util > div{
+    display: flex;
+    margin-right: 40px;
+    flex-direction: row;
+}   
+.discover > .row-d > .util > div > img{
+    margin-right: 10px;
+}
+
+/* ************ */
+
+
+.discover > .cardes{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: min-content;
+    gap: 100px;
+}
+
+.discover > .cardes > img{
+    width: 298px;
+    height: 313px;
+}
+.discover > .cardes > .price-nft{
+    margin-right: auto;
+    max-width: 298px;
+}
+
+.discover > .cardes > .price-nft:last-child{
+    margin-right: 0;
+}
+
+.block1{
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    position: relative;
+}
+
+.discover > .cardes > .price-nft > .block1 > h3{
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.discover > .cardes > .price-nft > .block1 > p{
+    color: var(--gray-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.discover > .cardes > .price-nft > .block1 > button{
+    border-radius: 8px;
+    border: 1px solid var(--gray-text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    background-color: rgba(255, 0, 0, 0);
+}
+
+.discover > button{
+    margin-top: 80px;
+    width: 161px;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid var(--gray-text-color);
+    font-size: 16px;
+    color: var(--gray-text-color);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/* footer */
+
+footer{
+    padding-top:160px ;
+    /* background-color: rgba(255, 0, 0, 0.384); */
+    max-width: 100%;
+    min-height: auto;
+    margin-bottom: 50px;
+}
+
+footer > .content{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    color: #FFF;
+}
+
+footer > .content > h2{
+    max-width: 455px;
+    color: #FFF;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+}
+
+footer > .content > .marketplace > h3, .company > h3, .contact > h3{
+    font-size: 40px;
+    color: #FFF;
+}
+
+footer > .content > .marketplace > p, .company > p, .contact > p{
+    color: var(--gray-text-color);
+    font-size: 24px;
+}
+
+.marketplace, .company, .contact{
+    display: grid;
+    gap: 40px;
+    margin-left: 160px;
+    grid-template-rows: max-content;
+}
+
+footer > .undercontent{
+    color: var(--gray-text-color);
+    display: grid;
+    grid-template-columns: min-content;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+footer > .undercontent >.vector2{
+    margin-top: 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.media{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.media > p {
+    margin-left: 1000px;
+}
